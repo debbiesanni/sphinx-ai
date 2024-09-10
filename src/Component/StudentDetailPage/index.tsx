@@ -48,7 +48,6 @@ const StudentDetailPage = () => {
           >
             <Box
               sx={{
-                maxWidth: 300,
                 mt: { xs: 10 },
                 textAlign: "center",
                 position: "relative"
@@ -95,7 +94,7 @@ const StudentDetailPage = () => {
           <Box
             sx={{
               width: { xs: "100%", md: "57%" },
-              height: 500,
+              height: { xs: 450, md: 500 },
               background: "#f1f1f1",
               borderRadius: { xs: 0, md: "0 20px 20px 0" },
               py: 4,
