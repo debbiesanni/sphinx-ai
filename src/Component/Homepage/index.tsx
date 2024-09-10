@@ -14,10 +14,10 @@ import StickyHeadTable from "../Shared/table";
 
 const HomePage = () => {
   const router = useRouter();
-  let { listStudents } = studentData();
+  const { listStudents } = studentData();
   const [filteredStudents, setFilteredStudents] = useState(listStudents);
 
-  const handleClick = (student: any) => {
+  const handleClick = (student: StudentInt) => {
     router.push(`/student/${student.id}`);
   };
 
@@ -70,7 +70,7 @@ const HomePage = () => {
           <TextField
             label="Search students"
             variant="outlined"
-            onChange={(e: any) => filterStudents(e.target.value)}
+            onChange={(e) => filterStudents(e.target.value)}
           />
         </Box>
       </Box>
