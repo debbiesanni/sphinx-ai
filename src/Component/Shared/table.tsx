@@ -13,9 +13,9 @@ export default function StickyHeadTable({
   rows,
   onClick
 }: {
-  columns: any[];
-  rows: any[];
-  onClick?: Function;
+  columns: Array<any>;
+  rows: Array<any>;
+  onClick?: (value) => void;
 }) {
   return (
     <Paper sx={{ overflow: "hidden" }}>
