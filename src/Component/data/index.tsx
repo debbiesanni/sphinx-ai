@@ -22,7 +22,8 @@ export const studentData = () => {
         send: faker.datatype.boolean(),
         avatar: faker.image.avatar()
       });
-    localStorage.setItem(cacheKey, JSON.stringify(listStudents));
+    typeof window !== "undefined" &&
+      localStorage.setItem(cacheKey, JSON.stringify(listStudents));
   }
 
   const studentDetails = (userId: string) =>
