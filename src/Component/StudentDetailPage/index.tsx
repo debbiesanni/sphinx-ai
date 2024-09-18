@@ -17,7 +17,7 @@ const StudentDetailPage = () => {
   const { studentDetails } = studentData();
   const params = useParams();
   const { id } = params;
-  const student = studentDetails();
+  const student = studentDetails(id as string);
   return (
     <Container>
       <Box height={{ xs: "110vh", md: "70vh" }}>
